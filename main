@@ -1,0 +1,36 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+void formula(double a, double b, double c)
+{
+	double delta;
+	double resx1, resx2;
+	delta = pow(b, 2) - (4*a*c);
+	resx1 = ((b * -1) + sqrt(delta)) / (2 * a);
+	resx2 = ((b * -1) - sqrt(delta)) / (2 * a);
+
+	cout << "O resultado de delta e: -->  " << delta << endl;
+	cout << "O resultado de x1 e: -->  " << resx1 << endl;
+	cout << "O resultado de x2 e: -->  " << resx2 << endl;
+}
+
+int main()
+{
+	double a, b, c;
+
+	cout << "Programa do futuro 2.0 para calcular delta, x1 e x2 da sua equacao" << endl;
+
+	cout << "\n" << "Digite o valor de a: ";
+	cin >> a;
+	cout << "Digite o valor de b: ";
+	cin >> b;
+	cout << "Digite o valor de c: ";
+	cin >> c;
+
+	formula(a, b, c);
+
+	system("pause");
+	return 0;
+}
